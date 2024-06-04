@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объектно-ориентированное программирование</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://example.com/real-logo.png" alt="OOP Учебник">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#chapters">Главы</a></li>
+                    <li><a href="#authors">Авторы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Учись <span>Объектно-ориентированному программированию</span></h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Искать по учебнику...">
+                <button>Поиск</button>
+            </div>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="https://example.com/feature-icon1.png" alt="Icon">
+                    <p>Полные главы и материалы</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://example.com/feature-icon2.png" alt="Icon">
+                    <p>Примеры и задачи</p>
+                </div>
+                <div class="feature-item">
+                    <img src="https://example.com/feature-icon3.png" alt="Icon">
+                    <p>Теория и практика</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chapters" class="chapters">
+        <div class="container">
+            <h2>Главы Учебника</h2>
+            <div class="chapter-list">
+                <div class="chapter-item">
+                    <img src="https://example.com/chapter1.jpg" alt="Chapter 1">
+                    <h3>Введение в ООП</h3>
+                    <p>Основные концепции и принципы</p>
+                    <p>Дополнительная информация о введении в ООП...</p>
+                </div>
+                <div class="chapter-item">
+                    <img src="https://example.com/chapter2.jpg" alt="Chapter 2">
+                    <h3>Классы и Объекты</h3>
+                    <p>Создание и использование</p>
+                    <p>Дополнительная информация о классах и объектах...</p>
+                </div>
+                <div class="chapter-item">
+                    <img src="https://example.com/chapter3.jpg" alt="Chapter 3">
+                    <h3>Наследование</h3>
+                    <p>Механизмы и примеры</p>
+                    <p>Дополнительная информация о наследовании...</p>
+                </div>
+                <div class="chapter-item">
+                    <img src="https://example.com/chapter4.jpg" alt="Chapter 4">
+                    <h3>Полиморфизм</h3>
+                    <p>Использование и преимущества</p>
+                    <p>Дополнительная информация о полиморфизме...</p>
+                </div>
+                <div class="chapter-item">
+                    <img src="https://example.com/chapter5.jpg" alt="Chapter 5">
+                    <h3>Инкапсуляция</х3>
+                    <p>Принципы и примеры</p>
+                    <p>Дополнительная информация об инкапсуляции...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="authors" class="categories">
+        <div class="container">
+            <h2>Темы</h2>
+            <div class="category-list">
+                <button onclick="toggleContent('concepts')">Концепции</button>
+                <button onclick="toggleContent('examples')">Примеры</button>
+                <button onclick="toggleContent('practice')">Практика</button>
+                <button onclick="toggleContent('code')">Код</button>
+                <button onclick="toggleContent('theory')">Теория</button>
+            </div>
+            <div id="concepts" class="category-content">
+                <p>Здесь будут описаны концепции...</p>
+            </div>
+            <div id="examples" class="category-content" style="display:none;">
+                <p>Здесь будут приведены примеры...</p>
+            </div>
+            <div id="practice" class="category-content" style="display:none;">
+                <p>Здесь будет описана практика...</p>
+            </div>
+            <div id="code" class="category-content" style="display:none;">
+                <p>Здесь будет представлен код...</p>
+            </div>
+            <div id="theory" class="category-content" style="display:none;">
+                <p>Здесь будет описана теория...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="container">
+            <p>&copy; 2021 Объектно-ориентированное программирование. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#hero">О сервисе</a>
+                <a href="#chapters">Главы</a>
+                <a href="#authors">Авторы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
